@@ -20,5 +20,11 @@ func main() {
 
 	fmt.Println(m1)
 	fmt.Println(m2)
-	fmt.Println(m3)
+	printMap(m3)
+}
+
+func printMap(m map[string]string){
+	for key, val := range m {
+		fmt.Println(key, val)
+	}
 }
